@@ -235,8 +235,7 @@ transition: all 400ms ease-in;
     margin-top: 2rem;
     margin-bottom: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(150px,350px));
-    justify-content: center;
+    grid-template-columns: repeat(auto-fit,minmax(250px,550px));   justify-content: center;
     align-items: center;
     gap:30px;
     
@@ -691,6 +690,8 @@ align-items: center;
 
 @media(max-width:395px){
 
+    
+
     .img-padaria img{
 
         width: 250px;
@@ -707,7 +708,7 @@ align-items: center;
 
     .itens-paesecafes .info .pedir{
 
-        width: 60%;
+        width: 50%;
         font-size: 1.5rem;
         
     }
