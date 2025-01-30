@@ -4,14 +4,14 @@ O projeto Delícias Artesanais é uma página web desenvolvida como parte do por
 
 ## 🚀 Tecnologias Utilizadas
 
-HTML5 → Estrutura da página
-CSS3 → Estilização e responsividade
-JavaScript → Interatividade dos botões
+* HTML5 → Estrutura da página
+* CSS3 → Estilização e responsividade
+* JavaScript → Interatividade dos botões
 
 ## 🎯 Funcionalidades
-✅ Exibição de um cardápio de pães e cafés
-✅ Botões interativos para pedidos e encomendas
-✅ Layout responsivo para diferentes telas (desktop, tablet e mobile)
+* ✅ Exibição de um cardápio de pães e cafés
+* ✅ Botões interativos para pedidos e encomendas
+* ✅ Layout responsivo para diferentes telas (desktop, tablet e mobile)
 
 ## 🔗 Link do Projeto
 📌 Acesse aqui 
