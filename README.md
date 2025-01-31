@@ -1,6 +1,9 @@
-# 🥖☕ Delícias Artesanais
- Descrição:
-O projeto Delícias Artesanais é uma página web desenvolvida como parte do portfólio, baseada em um projeto de pizzaria da Crislaine de Paula. O site apresenta um cardápio de pães e cafés artesanais, permitindo que os usuários façam pedidos ou encomendas por meio de botões interativos. O design é totalmente responsivo, garantindo uma ótima experiência em diferentes dispositivos.
+## 🥖☕ Delícias Artesanais
+
+Descrição:
+O projeto Delícias Artesanais é uma página web desenvolvida como parte do meu portfólio, video aula da Crislaine de Paula, projeto pizzaria. O site apresenta um cardápio de pães e cafés artesanais, permitindo que os usuários realizem pedidos e encomendas por meio de botões interativos.
+
+O design foi pensado para ser totalmente responsivo, proporcionando uma ótima experiência em diferentes dispositivos. Além disso, utilizei JavaScript para implementar um menu hambúrguer dinâmico, garantindo uma navegação mais intuitiva e acessível em telas menores.
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -22,3 +25,8 @@ O projeto Delícias Artesanais é uma página web desenvolvida como parte do por
 
 ### Layout Web do Projeto
 ![Captura de tela 2025-01-28 232132](https://github.com/user-attachments/assets/49094c96-7cd7-4503-87be-867e330c0a30)
+
+## Layout Mobile
+
+
+![Captura de tela 2025-01-30 233415](https://github.com/user-attachments/assets/f4f473b9-475d-4b5f-90ba-9f23a5423434)
