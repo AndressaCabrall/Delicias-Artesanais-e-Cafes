@@ -9,7 +9,7 @@ O design foi pensado para ser totalmente responsivo, proporcionando uma ótima e
 
 * HTML5 → Estrutura da página
 * CSS3 → Estilização e responsividade
-* JavaScript → Menu Hambuerguer
+* JavaScript → Menu Hamburguer
 
 ## 🎯 Funcionalidades
 * ✅ Exibição de um cardápio de pães e cafés
