@@ -9,7 +9,7 @@ O design foi pensado para ser totalmente responsivo, proporcionando uma ótima e
 
 * HTML5 → Estrutura da página
 * CSS3 → Estilização e responsividade
-* JavaScript → Interatividade dos botões
+* JavaScript → Menu Hamburguer
 
 ## 🎯 Funcionalidades
 * ✅ Exibição de um cardápio de pães e cafés
@@ -17,7 +17,7 @@ O design foi pensado para ser totalmente responsivo, proporcionando uma ótima e
 * ✅ Layout responsivo para diferentes telas (desktop, tablet e mobile)
 
 ## 🔗 Link do Projeto
-📌 Acesse aqui https://andressacabrall.github.io/Delicias-Artesanais-e-Cafes/
+📌 [Acesse aqui]( https://andressacabrall.github.io/Delicias-Artesanais-e-Cafes/) 
 
 
 
