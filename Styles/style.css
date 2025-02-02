@@ -22,21 +22,21 @@ html {
 
 .content {
     width: 100vw;
-    height: 70px;
+    height: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #1f1e1f;
     position: fixed;
-    padding-left: 30rem;
+    padding-left: 30px;
 
 
 }
 
 .logo {
 
-    width: 100px;
-    height: auto;
+    width: 200px;
+    height: 200px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -44,14 +44,9 @@ html {
 
 .logo img {
 
-    width: 80%;
+    width: 100%;
     height: 100%;
-}
 
-.logo h3 {
-    color: #ffc506;
-    font-size: 1.6rem;
-    padding: 2rem 1rem 2rem 1rem;
 }
 
 .content .list-menu {
@@ -60,6 +55,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 
 }
 
@@ -71,6 +67,7 @@ html {
     text-transform: uppercase;
     font-weight: 400;
     transition: all 200ms ease-in;
+
 
 
 
@@ -402,27 +399,32 @@ footer {
     }
 
     .content {
-
-        flex-direction: column;
-        justify-content: center;
+        width: 100vw;
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
         align-items: center;
-        height: 15%;
-        padding-left: 0px;
-
-
+        background-color: #1f1e1f;
+        position: fixed;
+        padding: 0;
+        gap: 20px
     }
+
 
     .first-section {
 
-        padding-top: 15rem;
-
+        padding-top: 60px;
     }
 
+    
+    
+
+    .img-padaria {
+
+        width: 300px;
+        margin: 0;
 
 
-    .sobre-nos img {
-        margin-left: -2px;
-        width: 550px;
 
     }
 
@@ -481,6 +483,10 @@ footer {
         font-size: 50%;
     }
 
+    .first-section {
+        padding-top: 50px;
+    }
+
     .contentsobre p {
 
         font-size: 1.6rem;
@@ -494,9 +500,6 @@ footer {
     .sobre-nos img {
 
         width: 450px;
-        padding: 0;
-        position: relative;
-        left: 10rem;
 
     }
 
@@ -573,6 +576,14 @@ footer {
         display: none;
     }
 
+    .first-section {
+
+        width: 100vw;
+        height: 90vh;
+        padding-top: 50px;
+    }
+
+
     .first-section h1 {
         font-size: 5rem;
     }
@@ -583,10 +594,20 @@ footer {
     }
 
     .contentsobre p {
+        width: 550px;
         font-size: 2.0rem;
         line-height: 4rem;
 
     }
+
+    .img-padaria img {
+
+        width: 400px;
+        position: relative;
+        margin: auto;
+        margin-top: 35px;
+    }
+
 
     /* Menu Hamburguer */
     .one,
@@ -677,7 +698,7 @@ footer {
 
     .itens-paesecafes {
 
-        grid-template-columns: repeat(2, minmax(50px, 300px));
+        grid-template-columns: repeat(2, minmax(100px, 250px));
 
     }
 
@@ -715,6 +736,11 @@ footer {
 
 @media(max-width:600px) {
 
+    .conteudo-principal {
+
+        padding-top: 50px;
+    }
+
     .conteudo-principal h1 {
 
         width: 500px;
@@ -744,17 +770,24 @@ footer {
         font-size: 1.6rem;
     }
 
+
+
     .contentsobre p {
 
         font-size: 2.0rem;
-        width: 500px;
+        width: 450px;
         line-height: 4rem;
+        padding: 0px 20px 0px 20px;
     }
+
 
     .img-padaria img {
 
-        width: 350px;
+        width: 300px;
         position: relative;
+        margin: auto;
+        margin-top: 30px;
+
 
     }
 
@@ -836,7 +869,7 @@ footer {
         width: 280px;
         height: 280px;
         margin-top: 30px;
-        margin-left: 35px;
+        margin-left: 25px;
 
 
     }
@@ -848,7 +881,7 @@ footer {
     }
 
     .itens-paesecafes {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
+        grid-template-columns: repeat(auto-fit, minmax(150px, 280px));
 
         padding-bottom: 10px;
 
@@ -862,10 +895,24 @@ footer {
 
 @media (max-width: 395px) {
 
+    .logo {
+
+        width: 150px;
+        height: 150px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+
+
+
+
     .first-section {
 
         width: 100vw;
         height: 80vh;
+        padding-top: 60px;
+
 
 
     }
@@ -908,7 +955,7 @@ footer {
 
     }
 
-    .sobre-nos{
+    .sobre-nos {
 
         padding: 0;
     }
@@ -931,13 +978,18 @@ footer {
 
     .img-padaria {
 
-        width: 100%;
+        width: 300px;
 
     }
-    .img-padaria img{
 
-        width: 180px;
-        margin: 30px auto;
+    .img-padaria img {
+
+        width: 70%;
+        margin: auto;
+        margin-bottom: 35px;
+        margin-top: 30px;
+
+
 
     }
 

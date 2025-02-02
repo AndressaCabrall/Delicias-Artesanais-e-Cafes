@@ -17,7 +17,7 @@ O design foi pensado para ser totalmente responsivo, proporcionando uma ótima e
 * ✅ Layout responsivo para diferentes telas (desktop, tablet e mobile)
 
 ## 🔗 Link do Projeto
-📌 Acesse aqui 
+📌 Acesse aqui https://andressacabrall.github.io/Delicias-Artesanais-e-Cafes/
 
 
 
