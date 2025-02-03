@@ -483,8 +483,19 @@ footer {
         font-size: 50%;
     }
 
+    .content{ 
+
+        padding: 0px 40px 0px 20px;
+    }
+
     .first-section {
         padding-top: 50px;
+    }
+
+    .first-section h1{
+
+        font-size: 4.5rem;
+        padding-right: 20px;
     }
 
     .contentsobre p {
@@ -513,7 +524,8 @@ footer {
         justify-content: center;
         align-items: center;
         gap: 20px;
-
+        padding-right: 40px;
+        
     }
 
     .itens-paesecafes h4 {
@@ -567,8 +579,7 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 0px 40px;
-
+        
     }
 
     .content .list-menu {
@@ -586,6 +597,7 @@ footer {
 
     .first-section h1 {
         font-size: 5rem;
+        padding: 0;
     }
 
     .btn button {
@@ -604,8 +616,7 @@ footer {
 
         width: 400px;
         position: relative;
-        margin: auto;
-        margin-top: 35px;
+        margin: 30px 0px 20px 60px;
     }
 
 
@@ -699,6 +710,7 @@ footer {
     .itens-paesecafes {
 
         grid-template-columns: repeat(2, minmax(100px, 250px));
+        padding: 0 0 0 0;
 
     }
 
@@ -785,8 +797,7 @@ footer {
 
         width: 300px;
         position: relative;
-        margin: auto;
-        margin-top: 30px;
+        margin: 30px 0px 20px 60px;
 
 
     }
@@ -857,6 +868,10 @@ footer {
 
     }
 
+    .main {
+        width: 400px;
+    }
+
     .sobre-nos P {
 
         font-size: 1.8rem;
@@ -868,8 +883,8 @@ footer {
 
         width: 280px;
         height: 280px;
-        margin-top: 30px;
-        margin-left: 25px;
+        margin: 30px 0px 20px 50px;
+       
 
 
     }
