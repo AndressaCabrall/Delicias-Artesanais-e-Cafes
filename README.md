@@ -24,7 +24,7 @@ O layout foi desenvolvido com atenção à **responsividade**, garantindo uma bo
 ---
 
 ## 🔗 Link do Projeto
-📌 [Acesse aqui](https://andressacabrall.github.io/Delicias-Artesanais-e-Cafes/)
+📌 [Acesse aqui](https://delicias.paesecafes.andressacabraltech.com.br/)
 
 ---
 
