@@ -1,12 +1,13 @@
 let show= true;
-const menucontent = document.querySelector ('.content');
-const menutoggle = menucontent.querySelector('.menu-toggle');
+const navMenu = document.querySelector('.nav-menu');
+const menuToggle = document.querySelector('.menu-toggle');
 
 
 
-menutoggle.addEventListener('click', ()=>{
+menuToggle.addEventListener('click', ()=>{
 
-    menucontent.classList.toggle('on', show);
-    show = !show;
+    navMenu.classList.toggle('active');
+    menuToggle.classList.toggle('active');
+    
     
 });

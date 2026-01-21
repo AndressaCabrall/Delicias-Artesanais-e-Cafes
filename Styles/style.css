@@ -1,1024 +1,648 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: "Roboto", serif;
-
-
+    font-family: "Roboto", sans-serif;
 }
 
 html {
-    width: 100vw;
-    height: 100vh;
     font-size: 62.5%;
     overflow-x: hidden;
 }
 
-/* Cabeçalho/Menu */
+body {
+    min-height: 100vh;
+}
 
-.content {
-    width: 100vw;
+/* ================= HEADER ================= */
+
+.home-header {
+    width: 100%;
     height: 100px;
+    background-color: #000;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #1f1e1f;
     position: fixed;
-    padding-left: 32px;
-
-
+    top: 0;
+    z-index: 100;
 }
 
-.logo {
-
-    width: 200px;
-    height: 200px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
+.header-logo {
+    width: 120px;
 }
 
-.logo img {
-
+.header-logo img {
     width: 100%;
-    height: 100%;
-
 }
 
-.content .list-menu {
-
-    width: 700px;
+.nav-menu {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-
+    gap: 2rem;
 }
 
-.content .list-menu li a {
-
-    padding: 3rem 1rem 2rem 1rem;
+.nav-menu a {
     color: #ffc506;
     font-size: 1.6rem;
     text-transform: uppercase;
-    font-weight: 400;
-    transition: all 200ms ease-in;
-
-
-
-
+    transition: 0.3s;
 }
 
-.content .list-menu li a:hover {
-    background-color: #3333;
+.nav-menu a:hover {
+    color: #fff;
     border-bottom: 2px solid #fff;
-    color: #fff
 }
 
-/* Primeira Section/ Conteudo principal */
+.menu-toggle {
+    display: none;
+}
 
+/* ================= HOME ================= */
 
-.first-section {
-
-    height: 100vh;
-    width: 100vw;
-    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url(../img/pão\ de\ fermentação\ -multigrãos.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: 30px;
+.section-home {
+    min-height: 100vh;
+    padding-top: 100px;
+    background: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)),
+        url("../img/pao-multigraosimg.jpg") center/cover no-repeat;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
 }
 
-.first-section .conteudo-principal {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.home-content {
+    text-align: center;
 }
 
-.first-section h1 {
+.home-content h1 {
     color: #ffc506;
     font-size: 5rem;
     margin-bottom: 2rem;
-    text-transform: uppercase;
-
-
-
 }
 
-.first-section h2 {
-    color: rgb(177, 177, 177);
+.home-content h2 {
+    color: #ccc;
     font-size: 3rem;
-    font-weight: 400;
-    text-transform: uppercase;
     margin-bottom: 3rem;
-
-
-}
-
-.btn button {
-    width: 230px;
-    height: 60px;
-    cursor: pointer;
-    background-color: #ffc506;
-    text-transform: uppercase;
-    color: black;
-    border-radius: 10px;
-    margin-top: 5rem;
-    font-weight: 700;
-    transition: all 400ms ease-in;
-}
-
-.btn button:hover {
-
-    border: 1px solid #ffc506;
-    background-color: transparent;
-    color: #ffc506;
-
-
 }
 
 .btn {
-
     display: flex;
-    width: 480px;
-    justify-content: space-between;
-
-}
-
-/* Segunda Section/Sobre nós */
-
-.sobre-nos {
-
-    background-color: #1f1e1f;
-    width: 100%;
-    padding-bottom: 5rem;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-
-}
-
-.sobre-nos img {
-    width: 400px;
-    height: 400px;
-    margin-top: 10rem;
-    margin-left: 10rem;
-    border: 2px solid #ffff;
-}
-
-.main {
-
-    display: flex;
-    justify-content: space-between;
-}
-
-.contentsobre {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    gap: 2rem;
     justify-content: center;
 }
 
-.contentsobre h2 {
-
-    font-size: 5rem;
-    margin-bottom: 2rem;
-}
-
-.contentsobre p {
-
-    font-size: 1.6rem;
-    align-items: center;
-    width: 600px;
-    line-height: 3rem;
-}
-
-/* Terceira Section/ Produtos */
-
-.paesecafes {
-
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(12, 12, 12, 0.8);
-
-
-}
-
-.paesecafes h2 {
-
-    font-size: 5rem;
-    text-transform: uppercase;
-    color: #ffc506;
-    padding-top: 4rem;
-    padding-bottom: 2rem;
-}
-
-.itens-paesecafes {
-
-    width: 90%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-
-
-}
-
-.itens-paesecafes .info {
-
-    background-color: rgb(211, 221, 221);
-    border: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1.5rem;
-
-}
-
-.itens-paesecafes h3 {
-
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-    text-decoration: underline;
-
-}
-
-.itens-paesecafes h4 {
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    margin-bottom: 0.5rem;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 150px 150px;
-    margin-left: 5rem;
-    color: #585858;
-
-
-}
-
-.itens-paesecafes .info h4 span {
-
-    font-size: 1.6rem;
-    color: #585858;
-    margin-left: 5rem;
-}
-
-.itens-paesecafes div {
-
-    box-shadow: 0px 0px 4px 1px;
-
-}
-
-
-.itens-paesecafes img {
-
-    width: 100%;
-    height: 150px;
-
-}
-
-.itens-paesecafes .info .pedir {
-
-    width: 200px;
-    height: 35px;
-    cursor: pointer;
-    margin-top: 0.5rem;
-    background-color: #ffc506;
+.btn-reservar,
+.btn-montar {
+    width: 220px;
+    height: 55px;
     border-radius: 10px;
-    text-transform: uppercase;
-    color: black;
-    transition: all 200ms ease-in;
     border: none;
-
-
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #ffc506;
+    transition: 0.3s;
 }
 
-.itens-paesecafes .info .pedir:hover {
-
-    background-color: #5e5252;
-    color: white
+.btn-reservar:hover,
+.btn-montar:hover {
+    background-color: transparent;
+    color: #ffc506;
+    border: 1px solid #ffc506;
 }
 
-/* Contatos */
+/* ================= SOBRE ================= */
 
-.contatos {
+.section-about {
+    background-color: #000;
+    padding: 8rem 2rem;
+}
 
-    width: 100%;
-    background-color: #1f1e1f;
+.about-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+
+.about-content h2 {
+    color: #fff;
+    font-size: 4.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.about-content p {
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 3.5rem;
+    margin-bottom: 1.6rem;
+}
+
+.about-image img {
+    width: 280px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+
+/* ================= PRODUTOS ================= */
+
+.section-products {
+    background-color: #000;
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.section-products h2 {
+    color: #ffc506;
+    font-size: 4.5rem;
+    margin-bottom: 3rem;
+}
+
+/*Grid*/
+
+.products-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.products-cards>div {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: baseline;
-    font-size: 1rem;
-    color: #fff;
-    padding-bottom: 4rem;
+    background-color: #d3dddd;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.products-cards img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+/*Texto*/
+
+.products-text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.products-text h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
 
 }
 
-.contatos h3 {
+.products-text h4 {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #444;
+}
 
+/*Preço*/
+.products-text span {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Botão */
+.btn-pedir {
+    margin-top: 0 auto;
+    align-self: center;
+    width: 180px;
+    height: 38px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ffc506;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-pedir:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+/* ================= CONTATO ================= */
+
+.section-contact {
+    background-color: #1f1e1f;
+    color: #fff;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.section-contact h3 {
     font-size: 4rem;
     margin-bottom: 3rem;
-    padding-top: 3rem;
-
 }
 
-.contatos-secao {
-
-    width: 60%;
+.contact-content {
     display: flex;
-    justify-content: space-between;
-    font-size: 2rem;
-
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
 }
 
-.contatos-secao i {
-
-    margin-right: 1rem;
+.contact-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.6rem;
 }
 
-.contatos-secao div {
-
-    cursor: pointer;
-}
-
-.contatos-secao div:hover {
-
+.contact-icon i {
+    font-size: 3rem;
     color: #ffc506;
 }
 
-/* Footer */
+/* ================= FOOTER ================= */
 
 footer {
-
-    height: 25px;
-    background-color: black;
-    color: white;
+    background-color: #000;
+    color: #fff;
     font-size: 1.4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
+    text-align: center;
+    padding: 1rem;
 }
 
-/* Responsividade do Site */
-/*  Primeira responsividade 1200 px*/
+/* ================= RESPONSIVO ================= */
+@media (max-width: 1200px) {
 
-@media(max-width:1200px) {
 
-    .main {
-
-        display: block;
-        margin-top: 5rem;
-
+    .about-container {
+        max-width: 1000px;
+        gap: 4rem;
     }
 
-    .content {
-        width: 100vw;
-        height: 100px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: #1f1e1f;
-        position: fixed;
-        padding: 0;
-        gap: 20px
-    }
-
-
-    .first-section {
-
-        padding-top: 60px;
-    }
-
-    
-    
-
-    .img-padaria {
-
-        width: 300px;
-        margin: 0;
-
-
-
-    }
-
-    .itens-paesecafes {
-
-        width: 100%;
-        margin-top: 2rem;
-        margin-bottom: 5rem;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 250px));
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-
-    }
-
-    .itens-paesecafes h4 {
-        width: 100%;
-        margin: 0;
-        font-size: 1.1rem;
-        text-transform: uppercase;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        grid-template-columns: 110px 110px;
-        color: #585858;
-
-    }
-
-    .itens-paesecafes .info h4 span {
-
-        font-size: 1.2rem;
-        color: #585858;
-        margin-left: 5rem;
-
-    }
-
-
-    .contatos-secao {
-
-        width: 70%;
-        display: flex;
-        justify-content: space-between;
-        font-size: 2rem;
-
-    }
-
-}
-
-/* Segunda responsividade 992px */
-
-@media (max-width:992px) {
-
-    html {
-
-        font-size: 50%;
-    }
-
-    .content{ 
-
-        padding: 0px 40px 0px 20px;
-    }
-
-    .first-section {
-        padding-top: 50px;
-    }
-
-    .first-section h1{
-
-        font-size: 4.5rem;
-        padding-right: 20px;
-    }
-
-    .contentsobre p {
-
-        font-size: 1.6rem;
-        margin-top: 10px;
-        line-height: 3.5rem;
-
-
-    }
-
-
-    .sobre-nos img {
-
-        width: 450px;
-
-    }
-
-    .itens-paesecafes {
-
-        width: 100%;
-        margin-top: 2rem;
-        margin-bottom: 5rem;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        padding-right: 40px;
-        
-    }
-
-    .itens-paesecafes h4 {
-        width: 100%;
-        margin: 0;
-        font-size: 1.0rem;
-        text-transform: uppercase;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        grid-template-columns: 90px 90px;
-        color: #585858;
-
-    }
-
-    .itens-paesecafes .info .pedir {
-
-        width: 150px;
-        height: 30px;
-        font-size: 1.3rem;
-        cursor: pointer;
-        margin-top: 0.5rem;
-        background-color: #ffc506;
-        border-radius: 10px;
-        text-transform: uppercase;
-        color: black;
-        transition: all 200ms ease-in;
-        border: none;
-
-    }
-
-    .contatos-secao {
-
-        width: 80%;
-    }
-
-}
-
-/* Terceira responsividade 768px */
-
-@media(max-width:768px) {
-
-    html {
-
-        font-size: 40%;
-        background-color: #1f1e1f;
-    }
-
-    .content {
-
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        
-    }
-
-    .content .list-menu {
-
-        display: none;
-    }
-
-    .first-section {
-
-        width: 100vw;
-        height: 90vh;
-        padding-top: 50px;
-    }
-
-
-    .first-section h1 {
-        font-size: 5rem;
-        padding: 0;
-    }
-
-    .btn button {
-        width: 220px;
-        height: 40px;
-    }
-
-    .contentsobre p {
-        width: 550px;
-        font-size: 2.0rem;
-        line-height: 4rem;
-
-    }
-
-    .img-padaria img {
-
-        width: 400px;
-        position: relative;
-        margin: 30px 0px 20px 60px;
-    }
-
-
-    /* Menu Hamburguer */
-    .one,
-    .two,
-    .three {
-
-        width: 80%;
-        height: 2px;
-        background-color: #ffc506;
-        margin: 6px auto;
-        transition-duration: 0.5s;
-
-
-    }
-
-
-    .menu-toggle {
-
-        width: 30px;
-        height: 30px;
-    }
-
-    .content.on {
-        position: fixed;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: rgba(30, 31, 30, 0.8);
-        z-index: 10;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-
-    }
-
-    .content.on .logo {
-
-        display: none;
-    }
-
-    .content.on .menu-toggle {
-
-        position: absolute;
-        right: 40px;
-        top: 20px;
-
-    }
-
-    .content.on .list-menu {
-
-        display: block;
-    }
-
-    .content.on .list-menu li {
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .content.on .list-menu li a {
-
+    .about-content h2 {
         font-size: 4rem;
+    }
+
+    .about-content p {
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+    }
+
+    .about-image img {
+        width: 260px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .about-container {
+        flex-direction: column;
+        gap: 3.5rem;
 
     }
 
-    .content.on .menu-toggle .two {
+    .about-content h2 {
+        font-size: 3.6rem;
+        text-align: center;
 
+    }
+
+    .about-content p {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        max-width: 700px;
+        margin: 0 auto;
+
+    }
+
+    .about-image img {
+        width: 240px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    /*Home*/
+    .section-home {
+        padding: 0 2rem;
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 3.6rem;
+    }
+
+    .home-content h2 {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .btn {
+        display: flex;
+        width: 100%;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .btn-reservar,
+    .btn-montar {
+        width: 100%;
+        max-width: 250px;
+        height: 48px;
+        font-size: 1.4rem;
+    }
+
+    /*About*/
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    .about-content h2 {
+        font-size: 3.2rem;
+    }
+
+    .about-content p {
+        max-width: 650px;
+        padding: 0 1.5rem;
+        line-height: 2.8rem;
+        text-align: left;
+    }
+
+    /*About*/
+    .products-cards {
+        grid-template-columns: repeat(2, minmax(140px, 1fr));
+    }
+
+    .products-text div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .products-text h3 {
+        min-height: 4.2rem;
+        text-align: center;
+    }
+
+    .products-text h4 {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .btn-pedir {
+        margin-top: auto;
+    }
+
+    /*Contact*/
+    .contact-content {
+        display: flex;
+        gap: 1.5rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* Header-menu */
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        cursor: pointer;
+        z-index: 1100;
+    }
+    .menu-toggle div {
+        width: 28px;
+        height: 3px;
+        background: #ffc506;
+        transition: 0.3s;
+    }
+    .nav-menu {
+        position: absolute;
+        top: 100px;
+        right: 0;
+        width: 100%;
+        background: #000;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 2.5rem 0;
+        display: none;
+    }
+    .nav-menu.active {
+        display: flex;
+    }
+    /* animação do ícone */
+    .menu-toggle.active .one {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+
+    .menu-toggle.active .two {
         opacity: 0;
     }
 
-    .content.on .menu-toggle .one {
-
-        transform: rotate(45deg) translate(5px, -8px)
+    .menu-toggle.active .three {
+        transform: rotate(-45deg) translate(6px, -6px);
     }
 
-    .content.on .menu-toggle .three {
-
-        transform: rotate(-45deg) translate(20px, -6px);
+    /* Home */
+    .section-home {
+        padding: 0 2rem;
     }
 
-
-
-
-    .itens-paesecafes {
-
-        grid-template-columns: repeat(2, minmax(100px, 250px));
-        padding: 0 0 0 0;
-
-    }
-
-    .itens-paesecafes .info h4 {
-
-        width: 200px;
-        font-size: 1.5rem;
-        padding-bottom: 2rem;
-
-    }
-
-    .itens-paesecafes .info h4 span {
-
-        font-size: 1.5rem;
-        color: #585858;
-        margin-left: 8rem;
-
-    }
-
-    .contatos-secao {
-
-        display: block;
-        text-align: center;
-        font-size: 2rem;
-
-    }
-
-    .contatos-secao div {
-
-        margin: 1rem;
-    }
-}
-
-/* Quarta responsividade 600px */
-
-@media(max-width:600px) {
-
-    .conteudo-principal {
-
-        padding-top: 50px;
-    }
-
-    .conteudo-principal h1 {
-
-        width: 500px;
-        text-align: center;
-        font-size: 3.5rem;
-
-    }
-
-    .conteudo-principal h2 {
-
-        font-size: 2.5rem;
-    }
-
-
-    .btn {
-
-        display: flex;
-        width: 300px;
-        align-items: center;
-        justify-content: space-between;
-        gap: 20px;
-    }
-
-    .btn button {
-        width: 180px;
-        height: 30px;
-        font-size: 1.6rem;
-    }
-
-
-
-    .contentsobre p {
-
-        font-size: 2.0rem;
-        width: 450px;
-        line-height: 4rem;
-        padding: 0px 20px 0px 20px;
-    }
-
-
-    .img-padaria img {
-
-        width: 300px;
-        position: relative;
-        margin: 30px 0px 20px 60px;
-
-
-    }
-
-    .itens-paesecafes {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
-
-        padding-bottom: 10px;
-    }
-
-    .itens-paesecafes {
-
-        width: 80%;
-        height: 60%;
-    }
-
-    .content.on .list-menu li a {
-
-        font-size: 3rem;
-
-    }
-
-    .contato {
-
-        width: 300px;
-    }
-
-
-}
-
-
-/* Quinta responsividade */
-
-@media(max-width:500px) {
-
-    .conteudo-principal {
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .conteudo-principal h1 {
-
-        width: 400px;
-        text-align: center;
+    .home-content h1 {
         font-size: 2.8rem;
-
     }
 
-    .conteudo-principal h2 {
-        width: 400px;
-        font-size: 2.0rem;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 10px;
-
-    }
-
-    .btn button {
-
-        font-size: 1.6rem;
-        width: 300px;
-        height: 35px;
-
-
-    }
-
-    .main {
-        width: 400px;
-    }
-
-    .sobre-nos P {
-
-        font-size: 1.8rem;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-    .sobre-nos img {
-
-        width: 280px;
-        height: 280px;
-        margin: 30px 0px 20px 50px;
-       
-
-
-    }
-
-    .itens-paesecafes {
-
-        width: 80%;
-        height: 50%;
-    }
-
-    .itens-paesecafes {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 280px));
-
-        padding-bottom: 10px;
-
-    }
-
-}
-
-/* Sexta responsividade 395 px*/
-
-
-
-@media (max-width: 395px) {
-
-    .logo {
-
-        width: 150px;
-        height: 150px;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-    }
-
-
-
-
-    .first-section {
-
-        width: 100vw;
-        height: 80vh;
-        padding-top: 60px;
-
-
-
-    }
-
-    .conteudo-principal {
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-
-    .conteudo-principal h1 {
-
-        font-size: 2.0rem;
-    }
-
-    .conteudo-principal h2 {
-
-        font-size: 1.6rem;
+    .home-content h2 {
+        font-size: 2rem;
     }
 
     .btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 
+    .btn-reservar,
+    .btn-montar {
+        max-width: 40%;
+    }
+
+    /* About */
+    .about-container {
+        padding: 0 1.5rem;
+    }
+
+    .about-content p {
+        text-align: center;
+        margin: 20px;
+        line-height: 2.6rem;
+    }
+
+    .about-image img {
+        width: 240px;
+    }
+
+    /*  Products  */
+
+    .products-cards {
+        grid-template-columns: 1fr;
+        max-width: 380px;
+        min-height: 100%;
+    }
+
+    .products-card img {
+
+        object-fit: cover;
+
+    }
+
+    /* Contact*/
+
+    .contact-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .contact-content div {
         display: flex;
         flex-direction: column;
-
+        align-items: center;
+        font-size: 1.3rem;
     }
 
-    .btn button {
+    .contact-content i {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
 
-        width: 150px;
+}
+
+@media (max-width: 480px) {
+
+    /* Header */
+    .home-header {
+        height: 80px;
+        padding: 0 1.5rem;
+    }
+
+    .header-logo {
+        width: 90px;
+    }
+
+    .nav-menu {
+        top: 80px;
+    }
+
+    /* Home */
+    .section-home {
+        padding: 0 1.2rem;
+    }
+
+    .home-content h1 {
+        font-size: 2.4rem;
+        line-height: 3rem;
+    }
+
+    .home-content h2 {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+
+    .btn {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .btn-reservar,
+    .btn-montar {
+        max-width: 40%;
+        width: 40%;
+        height: 44px;
+        font-size: 1.3rem;
+    }
+
+    /* About */
+    .about-content h2 {
+        font-size: 2.6rem;
+    }
+
+    .about-content p {
         font-size: 1.4rem;
-    }
-
-    .main {
-        width: 300px;
-
-
-
-    }
-
-    .sobre-nos {
-
-        padding: 0;
-    }
-
-    .contentsobre h2 {
-
-        font-size: 3.0rem;
-
-    }
-
-    .contentsobre p {
-
-        width: 300px;
-        margin: 0;
-        font-size: 1.4rem;
-        padding: 15px 15px;
+        line-height: 2.4rem;
+        margin: 1rem auto;
         text-align: center;
-
     }
 
-    .img-padaria {
-
-        width: 300px;
-
-
+    .about-image img {
+        width: 200px;
     }
 
-    .img-padaria img {
-
-        width: 70%;
-       margin:10px 0px 20px 45px;
-        
-
-
-
+    /* Products */
+    .section-products h2 {
+        font-size: 3.2rem;
     }
 
-
-    .paesecafes h2 {
-
-        font-size: 3.5rem;
+    .products-cards {
+        max-width: 320px;
     }
 
-    .itens-paesecafes {
-
-        grid-template-columns: repeat(auto-fit, minmax(200px, 220px));
-
-        padding-bottom: 10px;
+    .products-text h3 {
+        font-size: 1.6rem;
     }
 
+    .products-text h4 {
+        font-size: 1.2rem;
+    }
+
+    .btn-pedir {
+        width: 100%;
+        max-width: 160px;
+        height: 36px;
+        font-size: 1.2rem;
+    }
+
+    /* Contact */
+    .section-contact h3 {
+        font-size: 3rem;
+    }
+
+    .contact-content {
+        gap: 1.2rem;
+    }
+
+    .contact-content i {
+        font-size: 1.8rem;
+    }
+
+    .contact-content span {
+        font-size: 1.2rem;
+    }
+
+    /* Footer */
+    footer h4 {
+        font-size: 1.2rem;
+    }
 }
